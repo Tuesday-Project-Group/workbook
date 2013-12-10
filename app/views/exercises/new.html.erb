@@ -1,11 +1,12 @@
 <h1>Post New Exercise</h1>
+<div>
+ <%= form_for(@exercise) do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
 
-  <form action="http://somesite.com/prog/adduser" method="post">
-    <P>
-    <label for="title">Title: </label>
-              <input type="text" id="title"><br>
-    <label for="exercise">Exercise: </label>
-              <textarea type="text" id="exercise"></textarea><br>
-    <input type="submit" value="Send"> 
-    </P>
- </form>
+  <%= f.label :task  %>:
+  <%= f.text_field :task %><br />
+
+  <%= f.submit %>
+<% end %>
+</div>
